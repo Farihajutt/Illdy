@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #Section {
+            height: 150vh;
+            width: 100%;
+            background-image: url(./Images/front-page-header.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #Navbar {
+            height: 100px;
+            width: 100%;
+        }
+
+        #Logo {
+            width: max-content;
+            margin-left: 80px;
+            margin-top: 15px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #NavUl {
+            width: max-content;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        #Navlist {
+            list-style: none;
+            display: inline;
+            margin-left: 40px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #Navlist:hover {
+            color: rgb(241, 210, 4);
+        }
+
+        #section1 {
+            height: 300px;
+            width: 1000px;
+            margin-left: 150px;
+            margin-top: 270px;
+            text-align: center;
+            color: white;
+        }
+
+        #Section2 {
+            font-size: 85px;
+
+        }
+
+        #sectionpara {
+            margin-top: 40px;
+            line-height: 25px;
+        }
+
+        #Btn1 {
+            margin-top: 20px;
+            height: 60px;
+            width: 230px;
+            border: 3px solid white;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.227);
+            cursor: pointer;
+            color: white;
+            font-size: 105%;
+        }
+
+        #Btn2 {
+            height: 60px;
+            width: 230px;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-top: 70px;
+            border: none;
+            background-color: rgb(241, 210, 4);
+            cursor: pointer;
+            color: white;
+            font-size: 105%;
+
+
+
+        }
+
+        #Btn2:hover {
+            background-color: blueviolet;
+        }
+
+        #section22 {
+            height: 100vh;
+            width: 100%;
+        }
+
+        #one {
+            margin-top: 60px;
+            font-weight: bold;
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.698);
+            text-align: center;
+        }
+
+        #two {
+            margin-top: 40px;
+            line-height: 25px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.545);
+        }
+
+        #range {
+            height: 200px;
+            width: 1090px;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #section33 {
+            height: 90vh;
+            width: 100%;
+        }
+
+        #six {
+            height: 200px;
+            width: 100%;
+            background-color: rgb(245, 245, 245);
+            padding: 1px;
+            text-align: center;
+        }
+
+        #six1 {
+            margin-top: 50px;
+
+        }
+
+        #six2 {
+            margin-top: 20px;
+            color: rgba(0, 0, 0, 0.662);
+            font-weight: 1;
+            font-size: 15px;
+        }
+
+        #seven {
+            height: 320px;
+            width: 100%;
+
+        }
+
+        #seven1 {
+            height: 320px;
+            width: 312px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./Images/front-page-project-4.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #seven2 {
+            height: 320px;
+            width: 312px;
+
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -5px;
+            background-image: url(./Images/front-page-project-3.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #seven3 {
+            height: 320px;
+            width: 312px;
+
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -5px;
+            background-image: url(./Images/front-page-project-2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #seven4 {
+            height: 320px;
+            width: 325px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -5px;
+            background-image: url(./Images/front-page-project-1.jpg);
+
+        }
+
+        #section44 {
+            height: 90vh;
+            width: 100%;
+            background-image: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/front-page/front-page-counter.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #Overlay {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(105, 75, 135);
+            padding: 1px;
+        }
+
+        #text {
+            margin-top: 30px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+
+        }
+
+        #text1 {
+            height: 150px;
+            width: 150px;
+            margin-left: 560px;
+            margin-top: 20px;
+            background-image: url(./Images/mike-muller-127x127.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 100%;
+        }
+
+        #text2 {
+            height: 120px;
+            width: 1000px;
+            margin-left: 150px;
+            margin-top: 20px;
+            background-color: rgb(106,77,138);
+            padding: 1px;
+
+        }
+
+        #text3 {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            line-height: 25px;
+            font-weight: 1;
+            font-size: 15px;
+        }
+
+        #text4 {
+            height: 50px;
+            width: 200px;
+            margin-top: 50px;
+            margin-left: 400px;
+        }
+
+        #text5 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        #section55 {
+            height: 70vh;
+            width: 100%;
+        }
+
+        #text6 {
+            text-align: center;
+            margin-top: 80px;
+            color: rgb(84,84,84);
+            font-weight: bolder;
+        }
+
+        #text7 {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 1;
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.561);
+        }
+
+        #para {
+            height: 50vh;
+            width: 100%;
+            margin-top: 20px;
+
+        }
+
+        #para1 {
+            height: 50vh;
+            width: 400px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        #para2 {
+            height: 50vh;
+            width: 400px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #para3 {
+            height: 50vh;
+            width: 400px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        #paraone {
+            height: 70px;
+            width: 70px;
+            margin-top: 20px;
+            margin-left: 190px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/007/634/716/non_2x/pencil-logo-icon-design-template-free-vector.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        #paratwo {
+            color: rgb(241,139,109);
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        #parathree {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.519);
+            /* font-size: 13px;
+            color: rgba(0, 0, 0, 0.723); */
+
+        }
+
+        #parafour {
+            height: 70px;
+            width: 70px;
+            margin-top: 20px;
+            margin-left: 190px;
+            background-image: url(https://icon-library.com/images/coder-icon/coder-icon-2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #parafive {
+            color: rgb(241,210,4);
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+        #parasix {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.519);
+        }
+
+        #paraseven {
+            height: 70px;
+            width: 70px;
+            margin-top: 20px;
+            margin-left: 190px;
+        }
+        .srch{
+            font-size: 28px;
+            margin-left: 10px;
+            margin-top: 30px;
+            color: purple;
+        }
+
+        #paraeight {
+            color: purple;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 30px;
+            
+        }
+
+        #paranine {
+            margin-top: 30px;
+            text-align: center;
+            /* font-size: 13px;
+            color: rgba(0, 0, 0, 0.723); */
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.519);
+        }
+
+        #section66 {
+            height: 160vh;
+            width: 100%;
+            background-color: darkslategrey;
+            padding: 1px;
+        }
+
+        #paraten {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            color: white;
+        }
+
+        #paraeleven {
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+        }
+
+        #para11 {
+            height: 50px;
+            width: 200px;
+            background-color: rgb(241, 210, 4);
+            margin-top: 40px;
+            margin-left: 550px;
+            padding: 1px;
+            cursor: pointer;
+        }
+
+        #para11:hover {
+            background-color: purple;
+        }
+
+        #para12 {
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border-radius: 100%;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        #para13 {
+            margin-left: 5px;
+            color: rgb(241, 210, 4);
+        }
+
+        #para11:hover #para13 {
+            color: purple;
+        }
+
+        #para14 {
+            margin-left: 40px;
+            color: white;
+            margin-top: -20px;
+            width: max-content;
+        }
+
+        #page {
+            height: 100vh;
+            width: 90%;
+            margin-top: 50px;
+            margin-left: 5%;
+        }
+
+        #page1 {
+            height: 100%;
+            width: 32%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 5px;
+        }
+
+        #page2 {
+            height: 108%;
+            width: 32%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 15px;
+
+        }
+
+        #page3 {
+            height: 100%;
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 15px;
+        }
+
+        #pageone {
+            height: 250px;
+            width: 100%;
+            background-image: url(https://banner2.cleanpng.com/20190807/kqc/kisspng-mount-scenery-nature-reserve-fjord-water-resources-5d4a75999d7591.237370591565160857645.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #page11 {
+            height: 327px;
+            width: 100%;
+            background-color: white;
+            padding: 1px;
+        }
+
+        #page12 {
+            text-align: center;
+            margin-top: 40px;
+            cursor: pointer;
+
+        }
+
+        #page12:hover {
+            color: rgb(241, 210, 4);
+            ;
+        }
+
+        #page13 {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #page14 {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(241, 210, 4);
+            margin-top: 70px;
+            margin-left: 30px;
+            border-radius: 100%;
+        }
+
+        #page14:hover {
+            color: purple;
+        }
+
+        #page15 {
+            margin-left: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        #page16 {
+            height: 50px;
+            width: 150px;
+            margin-left: 30px;
+            margin-top: -20px;
+            color: rgb(241, 210, 4);
+            cursor: pointer;
+        }
+
+        #page16:hover {
+            color: purple;
+        }
+
+        #pagetwo {
+            height: 250px;
+            width: 100%;
+            background-image: url(https://w7.pngwing.com/pngs/556/131/png-transparent-background-dusk-highway-mountain.png);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        #page21 {
+            height: 370px;
+            width: 100%;
+            background-color: white;
+            padding: 1px;
+
+        }
+
+        #page22 {
+            text-align: center;
+            margin-top: 40px;
+            cursor: pointer;
+
+        }
+
+        #page22:hover {
+            color: rgb(241, 210, 4);
+
+        }
+
+        #page23 {
+            margin-top: 40px;
+            text-align: center;
+
+        }
+
+        #page24 {
+            height: 40px;
+            width: 200px;
+            margin-left: 30px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        #page24:hover #page25 {
+            background-color: purple;
+        }
+
+        #page24:hover #page27 {
+            color: purple;
+        }
+
+        #page25 {
+            height: 20px;
+            width: 20px;
+            margin-top: 10px;
+            background-color: rgb(241, 210, 4);
+            border-radius: 100%;
+            margin-left: 10px;
+
+
+        }
+
+        #page26 {
+            color: white;
+            margin-left: 5px;
+        }
+
+        #page27 {
+            color: rgb(241, 210, 4);
+            margin-left: 30px;
+            width: max-content;
+            margin-top: -20px;
+        }
+
+        #pagethree {
+            height: 250px;
+            width: 100%;
+            background-image: url(./Images/photo-1447687643809-e05fd462f350-360x213.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #page31 {
+            height: 327px;
+            width: 100%;
+            background-color: white;
+            padding: 1px;
+        }
+
+        #page32 {
+            text-align: center;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+
+        #page32:hover {
+            color: rgb(241, 210, 4);
+        }
+
+        #page33 {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #page34 {
+            height: 40px;
+            width: 200px;
+            margin-left: 30px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        #page34:hover #page35 {
+            background-color: purple;
+        }
+
+        #page34:hover #page37 {
+            color: purple;
+        }
+
+        #page35 {
+            height: 20px;
+            width: 20px;
+            margin-top: 10px;
+            background-color: rgb(241, 210, 4);
+            border-radius: 100%;
+            margin-left: 10px;
+
+
+        }
+
+        #page36 {
+            color: white;
+            margin-left: 5px;
+        }
+
+        #page37 {
+            color: rgb(241, 210, 4);
+            margin-left: 30px;
+            width: max-content;
+            margin-top: -20px;
+        }
+
+        #section77 {
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid; */
+            background-image: url(./Images/front-page-counter.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        #page41 {
+            width: 30%;
+            height: 50px;
+            border-right: 1px solid white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+            margin-top: 50px;
+        }
+
+        #page42 {
+            width: 30%;
+            height: 50px;
+            border-right: 1px solid white;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+        }
+
+        #page43 {
+            width: 30%;
+            height: 50px;
+            border-right: 1px solid white;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+
+        }
+
+        #pagefourone {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            color: white;
+
+
+        }
+
+        #pagefourtwo {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #pagefourthree {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #section88 {
+            height: 90vh;
+            width: 100%;
+            padding: 1px;
+
+            background-color: rgb(247, 247, 247);
+        }
+
+        #page44 {
+            text-align: center;
+            margin-top: 70px;
+            font-weight: bold;
+            color: rgb(84, 84, 84);
+            font-size: 250%;
+        }
+
+        #page45 {
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(84, 84, 84);
+
+        }
+
+        #page46 {
+            height: 50vh;
+            width: 100%;
+
+            margin-top: 70px;
+        }
+
+        #pagefourfour {
+            width: 30%;
+            height: 50vh;
+
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 25px;
+
+        }
+
+        #pagefourfive {
+            width: 30%;
+            height: 50vh;
+
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 25px;
+
+        }
+
+        #pagefoursix {
+            width: 30%;
+            height: 50vh;
+
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 25px;
+
+        }
+
+        #pagefourseven {
+            height: 150px;
+            width: 150px;
+            margin-top: 30px;
+            margin-left: 10px;
+
+            border-radius: 100%;
+            background-image: url(./Images/front-page-team-1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #pagefoureight {
+            margin-top: -130px;
+            margin-left: 180px;
+            font-weight: bold;
+            color: rgb(84, 84, 84);
+
+        }
+
+        #pagefournine {
+            color: rgb(241, 139, 109);
+            margin-top: 10px;
+            margin-left: 180px;
+            font-weight: 1;
+
+        }
+
+        #pagefourten {
+            color: rgba(84, 84, 84, 0.787);
+            margin-top: 30px;
+            margin-left: 170px;
+
+        }
+
+        #pagefoureleven {
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(241, 139, 109);
+            border-radius: 100%;
+            margin-left: 170px;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+        }
+        .fb{
+            color:  rgb(241, 139, 109);
+            margin-left: 7px;
+            margin-top: 6px;
+        }
+
+        #pagefourtwelve {
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(241, 139, 109);
+            border-radius: 100%;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            cursor: pointer;
+
+        }
+
+        #pagefourthirteen {
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(241, 139, 109);
+            border-radius: 100%;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        #page47 {
+            height: 150px;
+            width: 150px;
+            margin-top: 30px;
+            margin-left: 10px;
+
+            border-radius: 100%;
+            background-image: url(./Images/front-page-team-2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #page48 {
+            margin-top: -130px;
+            margin-left: 180px;
+            font-weight: bold;
+            color: rgb(84, 84, 84);
+
+        }
+
+        #page49 {
+            color: rgb(242, 210, 4);
+            margin-top: 10px;
+            margin-left: 180px;
+            font-weight: 1;
+
+        }
+
+        #page50 {
+            color: rgba(84, 84, 84, 0.756);
+            margin-top: 30px;
+            margin-left: 170px;
+
+        }
+
+        #page51 {
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(242, 210, 4);
+            border-radius: 100%;
+            margin-left: 170px;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+
+        }
+
+        #page52 {
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(242, 210, 4);
+            border-radius: 100%;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            cursor: pointer;
+
+        }
+
+        #page53 {
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(242, 210, 4);
+            border-radius: 100%;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .twtr{
+            color:  rgb(242, 210, 4);
+            margin-top: 6px;
+            margin-left: 7px;
+        }
+
+        #page54 {
+            height: 150px;
+            width: 150px;
+            margin-top: 30px;
+            margin-left: 10px;
+
+            border-radius: 100%;
+            background-image: url(./Images/mike-muller-127x127.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #page55 {
+            margin-top: -130px;
+            margin-left: 180px;
+            font-weight: bold;
+            color: rgb(84, 84, 84);
+
+        }
+
+        #page56 {
+            color: rgb(106, 77, 138);
+            margin-top: 10px;
+            margin-left: 180px;
+            font-weight: 1;
+
+        }
+
+        #page57 {
+            color: rgba(84, 84, 84, 0.769);
+            margin-top: 30px;
+            margin-left: 170px;
+
+        }
+
+        #page58 {
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(106, 77, 138);
+            border-radius: 100%;
+            margin-left: 170px;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+
+        }
+
+        #page59 {
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(106, 77, 138);
+            border-radius: 100%;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        #page60 {
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(106, 77, 138);
+            border-radius: 100%;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .ln{
+            margin-top: 6px;
+            margin-left: 7px;
+            color: rgb(106, 77, 138);
+        }
+
+        #section99 {
+            height: 130vh;
+            width: 100%;
+            padding: 1px;
+        }
+
+        #page61 {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 30px;
+            color: rgb(84, 84, 84);
+
+        }
+
+        #page62 {
+            color: rgb(242, 210, 4);
+            margin-left: 70px;
+            margin-top: 60px;
+
+
+        }
+
+        #page63 {
+            color: rgb(147, 157, 158);
+            margin-top: -20px;
+            margin-left: 160px;
+
+        }
+
+        #page64 {
+            color: rgb(242, 210, 4);
+            margin-left: 500px;
+            margin-top: -40px;
+
+
+        }
+
+        #page65 {
+            color: rgb(147, 157, 158);
+            margin-left: 670px;
+            margin-top: -20px;
+
+        }
+
+        #page66 {
+            height: 25px;
+            width: 25px;
+            border-radius: 100%;
+            margin-left: 1100px;
+            margin-top: -80px;
+        }
+
+        #page67 {
+            height: 25px;
+            width: 25px;
+            border-radius: 100%;
+            margin-left: 1140px;
+            margin-top: -25px;
+        }
+
+        #page68 {
+            height: 25px;
+            width: 25px;
+            border-radius: 100%;
+            margin-left: 1180px;
+            margin-top: -25px;
+        }
+        .new{
+            margin-top: 6px;
+            margin-left: 7px;
+            color: rgba(0, 0, 0, 0.683);
+        }
+
+        #page69 {
+            color: rgb(147, 157, 158);
+            margin-top: 90px;
+            margin-left: 60px;
+
+
+        }
+
+        #page70 {
+            height: 30px;
+            width: 250px;
+
+            margin-left: 60px;
+            margin-top: 5px;
+        }
+
+        #page71 {
+            color: rgb(147, 157, 158);
+            margin-left: 450px;
+            margin-top: -60px;
+
+        }
+
+        #page72 {
+            height: 30px;
+            width: 250px;
+            margin-left: 450px;
+            margin-top: 10px;
+
+        }
+
+        #page73 {
+            color: rgb(147, 157, 158);
+            margin-left: 800px;
+            margin-top: -60px;
+
+        }
+
+        #page74 {
+            height: 30px;
+            width: 250px;
+            margin-left: 800px;
+            margin-top: 10px;
+        }
+
+        #page75 {
+            color: rgb(147, 157, 158);
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+
+        #page76 {
+            height: 30px;
+            width: 250px;
+            margin-top: -60px;
+            margin-left: 60px;
+
+
+        }
+
+        #page77 {
+            height: 30px;
+            width: 250px;
+            border: 1px solid rgba(0, 0, 0, 0.244);
+            border-radius: 3px;
+            margin-top: 10px;
+            background-color: rgb(252,252,252);
+        }
+
+        #page78 {
+            height: 30px;
+            width: 250px;
+            border: 1px solid rgba(0, 0, 0, 0.244);
+            border-radius: 3px;
+            margin-top: 10px;
+            background-color: rgb(252,252,252);
+        }
+
+        #page80 {
+            height: 30px;
+            width: 250px;
+            border: 1px solid rgba(0, 0, 0, 0.244);
+            border-radius: 3px;
+            margin-top: 10px;
+            background-color: rgb(252,252,252);
+
+        }
+
+        #page81 {
+            height: 300px;
+            width: 1100px;
+            margin-left: 60px;
+            margin-top: 10px;
+        }
+
+        #page82 {
+            height: 300px;
+            width: 1100px;
+            border: 1px solid rgba(0, 0, 0, 0.244);
+            border-radius: 3px;
+            margin-top: 10px;
+            background-color: rgb(252,252,252);
+        }
+
+        #page83 {
+            height: 40px;
+            width: 170px;
+            margin-top: 70px;
+            margin-left: 1050px;
+            background-color: rgb(242, 210, 4);
+            border-radius: 3px;
+            padding: 1px;
+            cursor: pointer;
+        }
+
+        #page84 {
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #index {
+            height: 60vh;
+            width: 100%;
+            background-color: rgb(41, 40, 37);
+        }
+
+        #name {
+            height: 55vh;
+            width: 25%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #name1 {
+            height: 55vh;
+            width: 25%;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        #name2 {
+            height: 55vh;
+            width: 25%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #name3 {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        #name4 {
+            color: gainsboro;
+            margin-top: 20px;
+            margin-left: 110px;
+            cursor: pointer;
+        }
+
+        #name4:hover {
+            color: purple;
+        }
+        .p1{
+            color: rgba(255, 255, 255, 0.608);
+            text-align: center;
+            font-size: 15px;
+            font-weight: 1;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="Section">
+        <div id="Navbar">
+            <div id="Logo">
+                <img src="./Images/cropped-footer-logo-1.png" alt="">
+            </div>
+            <ul id="NavUl">
+                <li id="Navlist">About</li>
+                <li id="Navlist">Portfolio</li>
+                <li id="Navlist">Testimonial</li>
+                <li id="Navlist">Services</li>
+                <li id="Navlist">Blog</li>
+                <li id="Navlist">Our Team</li>
+                <li id="Navlist">Contact Us</li>
+
+            </ul>
+            <div id="section1">
+                <h1 id="Section2">Clean.Slick.Pixel Perfect
+                </h1>
+                <p id="sectionpara">lldy is a great one-page theme, perfect for developers and designers but also for
+                    someone who just wants a <br> new website for his business. Try it now!</p>
+                <button id="Btn1">Learn More</button>
+                <button id="Btn2">Download</button>
+            </div>
+        </div>
+    </div>
+    <div id="section22">
+        <h1 id="one">About</h1>
+        <p id="two">It is an amazng one-page theme with great features that offers an incredible experience. It is easy
+            to install, make changes, adapt for your <br> business. A modern design with clean lines and styling for a
+            wide variety of content, exactly how a business design should be. You can add <br> as many images as you
+            want to the main header area and turn them into slider.</p>
+        <div id="range">
+            <img class="img" src="./Images/Screenshot (7).png" alt="">
+        </div>
+    </div>
+
+
+    <div id="section33">
+        <div id="six">
+            <h1 id="six1">Projects</h1>
+            <h4 id="six2">You'll love our work. Check it out!</h4>
+        </div>
+        <div id="seven">
+            <div id="seven1"></div>
+            <div id="seven2"></div>
+            <div id="seven3"></div>
+            <div id="seven4"></div>
+        </div>
+    </div>
+    <div id="section44">
+        <div id="Overlay">
+
+            <h1 id="text">Testimonials</h1>
+            <div id="text1"></div>
+            <div id="text2">
+                <h4 id="text3">" Awesome theme with great design and awesome support.If you don't know how to code your
+                    own wordpress theme,but you still <br>want a good-looking website for your buisness,Illdy might be
+                    exactly what you need.It is a slick theme with a lot of features to <br>choose from. "</h4>
+                <div id="text4">
+                    <h1 id="text5">Mike Muller</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section55">
+        <h1 id="text6">Services</h1>
+        <h4 id="text7">In order to help you grow your business, our carefully selected experts can advise you in in the
+            following areas:</h4>
+        <div id="para">
+            <div id="para1">
+                <div id="paraone"></div>
+                <h2 id="paratwo">Web Design</h2>
+                <p id="parathree">Consectetur adipiscing elit. Praesent molestie urna <br> hendrerit erat tincidunt
+                    tempus. Aliquam a leo risus. <br> Fusce a metus non augue dapibus porttitor at in <br> mauris.
+                    Pellentesque commodo...</p>
+            </div>
+            <div id="para2">
+                <div id="parafour"></div>
+                <h2 id="parafive">Web Development</h2>
+                <p id="parasix">Consectetur adipiscing elit. Praesent molestie urna <br> hendrerit erat tincidunt
+                    tempus. Aliquam a leo risus. <br> Fusce a metus non augue dapibus porttitor at in <br> mauris.
+                    Pellentesque commodo...</p>
+            </div>
+            <div id="para3">
+                <div id="paraseven">
+                    <i class="fa-solid fa-magnifying-glass srch"></i>
+                </div>
+                <h2 id="paraeight">Seo Analysis</h2>
+                <p id="paranine">Consectetur adipiscing elit. Praesent molestie urna <br> hendrerit erat tincidunt
+                    tempus. Aliquam a leo risus. <br> Fusce a metus non augue dapibus porttitor at in <br> mauris.
+                    Pellentesque commodo...</p>
+            </div>
+        </div>
+    </div>
+    <div id="section66">
+        <h1 id="paraten">Latest News</h1>
+        <p id="paraeleven">
+            If you are interested in the latest articles in the industry, take a sneak peek at our blog. You have
+            nothing to loose!</p>
+        <div id="para11">
+            <div id="para12">
+                <h3 id="para13">></h3>
+                <h3 id="para14">See blog</h3>
+            </div>
+        </div>
+        <div id="page">
+            <div id="page1">
+                <div id="pageone"></div>
+                <div id="page11">
+                    <h2 id="page12">We Have Made Illdy <br>Theme SEO Friendly</h2>
+                    <p id="page13">Illdy One Page WordPress theme is fully <br> SEO friendly and is ready to help you to
+                        <br> achieve the highest rankings…</p>
+                    <div id="page14">
+                        <h3 id="page15">></h3>
+                        <div id="page16">Read more</div>
+                    </div>
+                </div>
+            </div>
+            <div id="page2">
+                <div id="pagetwo"></div>
+                <div id="page21">
+                    <h2 id="page22">Stunning One Page <br>Wordpress Theme For Masses</h2>
+                    <p id="page23">This theme is not just free, it is free for <br> private and commercial use since it
+                        is <br> licensed under GPL…</p>
+                    <div id="page24">
+                        <div id="page25">
+                            <h3 id="page26">></h3>
+                            <h4 id="page27">Read more</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page3">
+                <div id="pagethree"></div>
+                <div id="page31">
+                    <h2 id="page32">Hello World!</h2>
+                    <p id="page33">Welcome to colorlib.com. This is our first <br> post around Illdy WordPress theme.
+                        Now <br> show that you can make out of it.…</p>
+                    <div id="page34">
+                        <div id="page35">
+                            <h3 id="page36">></h3>
+                            <h4 id="page37">Read more</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section77">
+        <div id="page41">
+            <h1 id="pagefourone">PROJECTS</h1>
+        </div>
+        <div id="page42">
+            <h1 id="pagefourtwo">CLIENTS</h1>
+        </div>
+        <div id="page43">
+            <h1 id="pagefourthree">COFFES</h1>
+        </div>
+    </div>
+    <div id="section88">
+        <h1 id="page44">Team</h1>
+        <p id="page45">
+            Meet the people that are going to take your business to the next level.</p>
+        <div id="page46">
+            <div id="pagefourfour">
+                <div id="pagefourseven"></div>
+                <h2 id="pagefoureight">Mark Lawrance</h2>
+                <h3 id="pagefournine">Web Designer</h3>
+                <p id="pagefourten">Creative, detail-oriented, <br> always focused.</p>
+                <div id="pagefoureleven">
+                    <i class="fa-brands fa-facebook-f fb"></i>
+                </div>
+                <div id="pagefourtwelve">
+                    <i class="fa-brands fa-twitter fb"></i>
+                </div>
+                <div id="pagefourthirteen">
+                    <i class="fa-brands fa-linkedin-in fb"></i>
+                </div>
+            </div>
+            <div id="pagefourfive">
+                <div id="page47"></div>
+                <h2 id="page48">Jane Stenton</h2>
+                <h3 id="page49">SEO Specialist</h3>
+                <p id="page50">Curious, tech-geeck and gets <br> serious when it comes to <br> work. </p>
+                <div id="page51">
+                    <i class="fa-brands fa-facebook-f twtr"></i>
+                </div>
+                <div id="page52">
+                    <i class="fa-brands fa-twitter twtr"></i>
+                </div>
+                <div id="page53">
+                    <i class="fa-brands fa-linkedin-in twtr"></i>
+                </div>
+            </div>
+            <div id="pagefoursix">
+                <div id="page54"></div>
+                <h2 id="page55">John Smith</h2>
+                <h3 id="page56">Developer</h3>
+                <p id="page57">Enthusiastic, passionate with <br> great sense of humor.</p>
+                <div id="page58">
+                    <i class="fa-brands fa-facebook-f ln"></i>
+                </div>
+                <div id="page59">
+                    <i class="fa-brands fa-twitter ln"></i>
+                </div>
+                <div id="page60">
+                    <i class="fa-brands fa-linkedin-in ln"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section99">
+        <h1 id="page61">Contact us</h1>
+        <p id="page62">Address</p>
+        <p id="page63">Street 221B Baker Street, <br> London, UK</p>
+        <p id="page64">Customer Support</p>
+        <p id="page65">E-mail: contact@site.com <br> Phone: (555) 555-5555</p>
+        <div id="page66">
+            <i class="fa-brands fa-facebook-f new"></i>
+        </div>
+        <div id="page67">
+            <i class="fa-brands fa-twitter new"></i>
+        </div>
+        <div id="page68">
+            <i class="fa-brands fa-linkedin-in new"></i>
+        </div>
+        <p id="page69">Your Name(required)</p>
+        <div id="page70">
+            <input id="page80" type="text">
+        </div>
+        <p id="page71">Your Email(required)</p>
+        <div id="page72">
+            <input id="page77" type=" text">
+        </div>
+        <p id="page73">Subject</p>
+        <div id="page74">
+            <input id="page78" type="text">
+        </div>
+        <p id="page75">Your Message</p>
+        <div id="page81">
+            <input id="page82" type="text">
+        </div>
+        <div id="page83">
+            <p id="page84">Send</p>
+        </div>
+
+    </div>
+    <div id="index">
+        <div id="name">
+            <h2 id="name3">PRODUCTS</h2>
+            <ul>
+                <li id="name4">Our Work</li>
+                <li id="name4">Club</li>
+                <li id="name4">News</li>
+                <li id="name4">Announcement</li>
+            </ul>
+        </div>
+        <div id="name1">
+            <h2 id="name3">INFORMATION</h2>
+            <ul>
+                <li id="name4">Pricing</li>
+                <li id="name4">Terms</li>
+                <li id="name4">Affiliates</li>
+                <li id="name4">Blog</li>
+            </ul>
+        </div>
+        <div id="name2">
+            <h2 id="name3">SUPPORT</h2>
+            <ul>
+                <li id="name4">Documentation</li>
+                <li id="name4">FAQs</li>
+                <li id="name4">Forums</li>
+                <li id="name4">Contact</li>
+            </ul>
+        </div>
+        <p class="p1">Theme: Illdy. © Copyright 2017. All Rights Reserved.</p>
+    </div>
+
+
+</body>
+
+</html>
